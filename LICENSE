@@ -1,0 +1,35 @@
+MIT License
+
+Copyright (c) 2026 Anshal Manoj
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the source code and associated files of this theme (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+ARTWORK NOTICE
+
+This license applies only to the original code and configuration of this theme
+(QML, config and scripts written by the author).
+
+It does NOT apply to the background artwork, character imagery, or avatar
+included in this repository. Those belong to their respective artists and
+rights holders, including the creators of "Kaoru Hana wa Rin to Saku"
+(The Fragrant Flower Blooms with Dignity), and are included as unofficial
+fan content. All rights to them remain with their owners. If you are a rights
+holder and want something removed, please open an issue.
