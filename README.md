@@ -1,18 +1,15 @@
 <div align="center">
 
-# 🌸 waguri
+# 🌸 Waguri - SDDM THEME
 
-### A dreamy purple SDDM login theme inspired by *Kaoruko Waguri*
-*from "The Fragrant Flower Blooms with Dignity" (Kaoru Hana wa Rin to Saku)*
+### A cute purple moonlit-sakura login theme for SDDM
+*Inspired by Kaoruko Waguri from "The Fragrant Flower Blooms with Dignity" (Kaoru Hana wa Rin to Saku)*
 
-![SDDM](https://img.shields.io/badge/SDDM-theme-b57edc?style=for-the-badge)
-![Qt](https://img.shields.io/badge/Qt-QML-9d4edd?style=for-the-badge&logo=qt&logoColor=white)
-![License](https://img.shields.io/badge/license-GPL--3.0-f4a6d7?style=for-the-badge)
-![Linux](https://img.shields.io/badge/Linux-ready-7b2cbf?style=for-the-badge&logo=linux&logoColor=white)
+![SDDM theme](https://img.shields.io/badge/SDDM-theme-b57edc?style=for-the-badge)
+![License](https://img.shields.io/github/license/anshalmanoj/waguri-sddm?style=for-the-badge&color=f4a6d7)
+![Stars](https://img.shields.io/github/stars/anshalmanoj/waguri-sddm?style=for-the-badge&color=9d4edd)
 
 <img src="screenshots/preview.png" alt="waguri SDDM theme preview" width="850">
-
-*Moonlit cherry blossoms, drifting petals, and a gentle glass-morphism login card.* 💜
 
 </div>
 
@@ -20,34 +17,35 @@
 
 ## ✨ Features
 
-- 🌙 **Moonlit sakura scene** with falling petals and soft sparkles
-- 🪟 **Frosted-glass login card** with rounded corners and a pink-purple glow
-- 🕛 **Large clock and date** display, always readable over the artwork
-- 👤 **Username and password fields** with icons and a focus highlight
-- 🖥️ **Session selector** (GNOME, KDE Plasma, Hyprland, Sway, etc.)
-- 🔘 **Gradient Login button**, plus **Shutdown** and **Reboot** buttons
-- 💬 Friendly "Welcome back ♡" greeting with a circular avatar
-- 🎀 Cute pastel purple + sakura pink palette
+- 🌙 Moonlit cherry-blossom scene with drifting petals and sparkles
+- 🪟 Frosted-glass login card with a soft pink-purple glow
+- 🕛 Large clock and date at the top
+- 👤 Username and password fields with icons and focus highlight
+- 🖥️ Session selector (GNOME, KDE Plasma, Hyprland, etc., whatever is installed)
+- 🔘 Gradient **Login** button, plus **Shutdown** and **Reboot**
+- 💬 "Welcome back ♡" greeting with a round avatar
 
 ## 📦 Requirements
 
 - [SDDM](https://github.com/sddm/sddm)
-- Qt / QtQuick (QML) packages required by SDDM on your distro
-- Qt5Compat / QtGraphicalEffects, if the theme uses blur effects
-
-> Adjust this list to match the exact Qt version and modules your theme uses.
+- The Qt / QtQuick packages that SDDM already needs on your distro
 
 ## 🚀 Installation
 
-### Manual
+**1. Clone the repo**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sddm-waguri-theme.git
-cd sddm-waguri-theme
+git clone https://github.com/anshalmanoj/waguri-sddm.git
+cd waguri-sddm
+```
+
+**2. Copy the theme into SDDM's themes folder**
+
+```bash
 sudo cp -r waguri /usr/share/sddm/themes/
 ```
 
-### Set as active theme
+**3. Set it as the active theme**
 
 Create or edit `/etc/sddm.conf.d/theme.conf`:
 
@@ -56,87 +54,49 @@ Create or edit `/etc/sddm.conf.d/theme.conf`:
 Current=waguri
 ```
 
-### Arch Linux (AUR)
+**4. Log out or reboot** to see it. 💜
+
+## 🧪 Preview without logging out
 
 ```bash
-# coming soon
-yay -S sddm-waguri-theme
-```
-
-## 🧪 Test before you log out
-
-```bash
-# Qt6 SDDM
+# SDDM with Qt6
 sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/waguri
 
-# Qt5 SDDM
+# SDDM with Qt5
 sddm-greeter --test-mode --theme /usr/share/sddm/themes/waguri
 ```
 
-## 🎨 Customization
+## 🗑️ Uninstall
 
-Edit `theme.conf` inside the theme folder:
-
-```ini
-[General]
-background=assets/background.png
-avatar=assets/avatar.png
-accentColor=#c77dff
+```bash
+sudo rm -rf /usr/share/sddm/themes/waguri
 ```
 
-| Option        | Description                  |
-|---------------|------------------------------|
-| `background`  | Path to your wallpaper       |
-| `avatar`      | Avatar shown above the form  |
-| `accentColor` | Main accent color            |
-
-> Update this table to match the options your `theme.conf` actually supports.
-
-## 🖼️ Screenshots
-
-| Login screen | Session menu |
-|--------------|--------------|
-| ![login](screenshots/login.png) | ![sessions](screenshots/sessions.png) |
-
-## 🗂️ Structure
-
-```
-waguri/
-├── Main.qml
-├── theme.conf
-├── metadata.desktop
-├── assets/
-│   ├── background.png
-│   └── avatar.png
-└── components/
-```
+Then remove or change the `Current=waguri` line in your SDDM config.
 
 ## 🛠️ Troubleshooting
 
-- **Theme not showing up?** Check that the folder is in `/usr/share/sddm/themes/` and contains `metadata.desktop`.
-- **Black screen or fallback theme?** Run the test-mode command above to see QML errors.
-- **Missing icons or blur?** Install the Qt modules listed under Requirements.
+- **Theme doesn't show up:** make sure the `waguri` folder is inside `/usr/share/sddm/themes/` and contains `metadata.desktop`.
+- **Black screen or fallback theme:** run the preview command above and read the QML errors it prints.
+- **Missing a Qt module:** install the Qt/QML packages for your SDDM version (Qt5 or Qt6) from your distro's repos.
 
 ## 🤝 Contributing
 
-Pull requests, issues, and new color variants are welcome! Feel free to open an issue for bugs or ideas.
+Issues and pull requests are welcome, whether it's a bug, a new color variant or a fix for your distro.
 
 ## ⚖️ Credits & Disclaimer
 
-- Theme code: © YOUR_NAME, licensed under **GPL-3.0**
-- *Kaoru Hana wa Rin to Saku* and the character **Kaoruko Waguri** belong to their respective creators and rights holders (author Saka Mikami; anime by CloverWorks).
+- Theme code by [Anshal Manoj](https://github.com/anshalmanoj). See [LICENSE](LICENSE).
+- *Kaoru Hana wa Rin to Saku* and the character Kaoruko Waguri belong to their respective creators and rights holders (author Saka Mikami, anime by CloverWorks).
 - This is an **unofficial fan-made project**, not affiliated with or endorsed by them.
-- Artwork: credit the original artist here (name + link). If you commissioned or made it yourself, say so.
-- Cherry-blossom assets and fonts: list sources and licenses here.
+- Artwork: **ADD ARTIST NAME + LINK HERE** (or note that you made it yourself).
 
-If you are a rights holder and want something removed, please open an issue and I'll take care of it promptly.
-
-## 💜 Support
-
-If you like this theme, leave a ⭐ on the repo. It really helps!
+If you are a rights holder and would like something removed, please open an issue and it will be taken down promptly.
 
 ---
 
 <div align="center">
-Made with 🌸 and too much purple
+
+If you like it, a ⭐ on the repo means a lot! 🌸
+
 </div>
