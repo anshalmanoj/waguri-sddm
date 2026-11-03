@@ -86,7 +86,7 @@ Issues and pull requests are welcome, whether it's a bug, a new color variant or
 
 ## ⚖️ Credits & Disclaimer
 
-- Theme code by [Anshal Manoj](https://github.com/anshalmanoj). See [LICENSE](LICENSE).
+- Theme code by [Anshal Manoj](https://github.com/anshalmanoj), released under the **MIT License**. See [LICENSE](LICENSE). The license covers the code only, not the artwork.
 - *Kaoru Hana wa Rin to Saku* and the character Kaoruko Waguri belong to their respective creators and rights holders (author Saka Mikami, anime by CloverWorks).
 - This is an **unofficial fan-made project**, not affiliated with or endorsed by them.
 - Artwork: wallpaper from [WallpaperAccess](https://wallpaperaccess.com/kaoruko-waguri-pc), original artist unknown. If this is your work, please open an issue for credit or removal.
