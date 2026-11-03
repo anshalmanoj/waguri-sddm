@@ -6,7 +6,7 @@
 *Inspired by Kaoruko Waguri from "The Fragrant Flower Blooms with Dignity" (Kaoru Hana wa Rin to Saku)*
 
 ![SDDM theme](https://img.shields.io/badge/SDDM-theme-b57edc?style=for-the-badge)
-![License](https://img.shields.io/github/license/anshalmanoj/waguri-sddm?style=for-the-badge&color=f4a6d7)
+![License](https://img.shields.io/badge/license-MIT-f4a6d7?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/anshalmanoj/waguri-sddm?style=for-the-badge&color=9d4edd)
 
 <img src="screenshots/preview.png" alt="waguri SDDM theme preview" width="850">
